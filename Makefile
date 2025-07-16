@@ -8,7 +8,6 @@ ifndef SINGLE_CPU_EXEC
     MAKEFLAGS	+= --jobs=$(NCPU)
 endif
 
-# Included a GCC version check and GNU make check for visibility but it may not be required.
 ifneq ($(firstword $(shell $(firstword $(MAKE)) --version)),GNU)
 $(error GNU make is not installed.)
 endif
@@ -136,14 +135,6 @@ LDFLAGS+=$(C_INCLUDES)
 LDFLAGS+=$(EXTRA_C_DEFINES)
 
 TARGET=boilerplate
-
-# Package version structure
-MAJOR=0
-MINOR=0
-PATCH=0
-EXTRA=rc
-
-RAW_VERSION := $(strip $(MAJOR).$(MINOR).$(PATCH))
 
 args		:= `arg="$(filter-out $@,$(MAKECMDGOALS))" && echo $${arg:-${1}}`
 fmt_file  	:= --style=file:.clang-format --verbose

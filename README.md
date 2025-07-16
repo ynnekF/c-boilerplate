@@ -1,5 +1,5 @@
 # C Boilerplate
----
+
 (Work In Progress)
 
 C Boilerplate project created from other C projects of mine.
@@ -32,9 +32,7 @@ GNU C Compiler ([GCC Make](https://www3.ntu.edu.sg/home/ehchua/programming/cpp/g
 gcc (Debian 12.2.0-14+deb12u1) 12.2.0
 ```
 
-
-
-#### Makefile Expanded
+### Makefile Expanded
 The `make` utility and `Makefile` automate the compilation process of C programs.
 
 Makefile Rule format..

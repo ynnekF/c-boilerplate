@@ -59,7 +59,7 @@ C_DEPS=-MMD -MF $(@:.o=.d)
 
 # Preprocessor macro definitions. These values will be predefined on each
 # source file before compilation. Currently there are two optional macros.
-# ex. -DUNIT_TEST
+# ex. -DUNIT_TEST -DNO_COLOR
 C_DEFINES=
 
 # Extra preprocessor macro definitions not computed by below logic. Can be
